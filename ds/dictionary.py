@@ -1,12 +1,4 @@
 # basic operations
-d = {}
-d = dict()
-
-a = d.setdefault("a", 1) # returns the value of the item with the specified key.
-# If the key does not exist, insert the key, with the specified value
-print(a)
-print(d)
-
 d = {"a": 1, "b": 2, "c": 3}
 for k, v in d.items():
 	print(k, v)
@@ -16,11 +8,19 @@ x = d.get("d", 4) # returns the value of the item with the specified key.
 print(x)
 
 # creation 
+d = {}
+d = dict()
+
 from collections import defaultdict
 d = defaultdict(list)
 d = defaultdict(lambda: 1)
 
 d = {_:set() for _ in range(0, 10)}
+
+# addition
+a = d.setdefault("a", 1) # returns the value of the item with the specified key.
+# If the key does not exist, insert the key, with the specified value
+print(a)
 
 # deletion
 d = {"a": 1, "b": 2, "c": 3}
