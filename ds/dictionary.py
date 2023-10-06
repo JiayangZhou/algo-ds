@@ -11,8 +11,9 @@ d = {"a": 1, "b": 2, "c": 3}
 for k, v in d.items():
 	print(k, v)
 
-x = a.get("d", 4) # returns the value of the item with the specified key.
+x = d.get("d", 4) # returns the value of the item with the specified key.
 # If the  key does not exist, return the specified value 
+print(x)
 
 # creation 
 from collections import defaultdict
