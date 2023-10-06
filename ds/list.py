@@ -34,13 +34,11 @@ print(a)
 print(a_reversed)
 print(a[::-1]) # return a reversed list
 
-a = [1,2,3,4]
+a = [1, 2, 3, 4]
 b = a[:2] # [1, 2]
+b = a[-2:] # [3, 4]
 
-a = [1,2,3] + [4]
-print(a)
-
-a = [1,2,3] + [4]
+a = [1, 2, 3] + [4]
 print(a)
 
 # add same value to all element in a list 
