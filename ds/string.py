@@ -5,8 +5,19 @@ _ = ord(s1) # 97
 print(_)
 print(chr(_))
 
-s2 = "abc"
-print(s2[1:10]) #bc
+s2 = "abcdef"
+print(s2[1:10]) #bcdef
+print(s2[1:3]) #bc
+print(s2[:3]) #abc
+print(s2[3:]) #def
+
+# split string to half
+if len(s2) % 2 == 0:
+    print(s2[:(len(s2) >> 1)])
+    print(s2[(len(s2) >> 1):])
+else:
+    print(s2[:(len(s2) >> 1)])
+    print(s2[(len(s2) >> 1) + 1:])
 
 s = "1212"
 s.count("1")
@@ -24,3 +35,8 @@ a = [*s] # split string to char list ['a', 'b', 'c']
 l = ["a","b","cd"]
 s = "".join(l)  # convert list to string
 print(s)
+
+# iteration 
+s = "abc"
+for i, c in enumerate(s):
+   print(i, c)

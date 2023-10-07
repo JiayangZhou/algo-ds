@@ -63,9 +63,16 @@ a = [(1,3,1), (1,2,3), (2,2,2)]
 print(sorted(a, key=lambda x: (x[1], x[0], x[2]))) # first criteria is x[1]
 # second criteria is x[0], third criteria is x[2] 
 
-
 from functools import cmp_to_key   
 def comparator(x, y):
 	return x[2] - y[2]
 a.sort(key=cmp_to_key(comparator)) # sort with customized comparator
 print(a)
+
+# iteration 
+s = [1, 2, 3]
+for i, c in enumerate(s):
+   print(i, c)
+   
+for i in range(1, 6, 2):
+    print(i)
