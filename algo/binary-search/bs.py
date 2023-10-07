@@ -25,5 +25,6 @@ def shipWithinDays(weights: list[int], days: int) -> int:
             high = mid
     return high
 
-shipWithinDays([1,2,3,1,1], 4) # 3
+# shipWithinDays([1,2,3,1,1], 4) # 3
 # shipWithinDays([3,2,2,4,1,4], 3) # 6
+
