@@ -2,6 +2,8 @@
 a = [1, 2, 3]
 n = len(a)
 total = sum(a)
+max_a = max(a)
+min_a = min(a)
 print(total, n)
 
 a = [1, 2, 3, 4, 3, 3]
