@@ -12,11 +12,13 @@ print(s2[:3]) #abc
 print(s2[3:]) #def
 
 # split string to half
+s2 = "abcdef"
+s2 = "abcdefg"
 if len(s2) % 2 == 0:
-    print(s2[:(len(s2) >> 1)])
+    print(s2[:(len(s2) >> 1)]) # len(s2) >> 1 is 3 which is d
     print(s2[(len(s2) >> 1):])
 else:
-    print(s2[:(len(s2) >> 1)])
+    print(s2[:(len(s2) >> 1)]) # len(s2) >> 1 is 3 which is also d
     print(s2[(len(s2) >> 1) + 1:])
 
 s = "1212"
