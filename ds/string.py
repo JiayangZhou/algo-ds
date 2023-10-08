@@ -53,6 +53,9 @@ s = "a b c d e"
 l = s.split(" ")
 print(l)
 
+s="abcd"
+print(set(s)) # same as this set([*cur])
+
 # iteration 
 s = "abc"
 for i, c in enumerate(s):
