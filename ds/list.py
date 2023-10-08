@@ -16,6 +16,10 @@ print(b)
 a = ['cat', 'dog', 'rabbit', 'horse']
 index = a.index('dog') # returns the first index of the specified element
 
+a = [1, 2, 3, 2]
+a = list(set(a))
+print(a)
+
 # creation
 a = [_ for _ in range(5) if _ > 2]
 a = [_ if _ > 2 else 0 for _ in range(5)]
