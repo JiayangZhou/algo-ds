@@ -69,3 +69,17 @@ def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
             break
         res.append(v)
     return res
+
+# https://leetcode.com/problems/subsets-ii/
+def subsetsWithDup(nums: List[int]) -> List[List[int]]:
+    res = []
+    n = len(nums)
+    def dfs(index, subset):
+        _ = sorted(subset.copy())
+        if _ not in res:
+            res.append(_)
+        for i in range(index, n):
+            dfs(i + 1, subset + [nums[i]])
+    dfs(0, [])
+    return sorted(res)
+subsetsWithDup([1,2,2])
