@@ -28,6 +28,9 @@ print(a)
 a = [0] * 40
 print(a)
 
+a = [[0,0]] * 5
+print(a)
+
 import sys
 n = 2
 a = [[sys.maxsize] * n for _ in range(n)] # n * n grid
@@ -70,6 +73,7 @@ a = [90,80,78,98,100]
 print(sorted(a))
 
 a = [(1,3,1), (3,2,3), (2,1,2)]
+a = [[1,3,1], [3,2,3], [2,1,2]]
 a.sort(key=lambda x: x[0])
 # a.sort(key=lambda x: x[0], reverse=True)
 # print(a)

@@ -8,3 +8,18 @@ def integerBreak(self, n: int) -> int:
             dp[i] = max((i - j) * j, dp[i], j * dp[i - j])
     return dp[n]
 
+# https://leetcode.com/problems/maximize-the-profit-as-the-salesman/
+def maximizeTheProfit(self, n: int, offers: List[List[int]]) -> int:
+    dp = [0] * n
+    p = [[] for _ in range(n)]
+    for _ in offers:
+        s,e,g = _[0], _[1], _[2]
+        p[e].append([s, g])
+    for i in range(n):
+        for _ in p[i]:
+            s = _[0]
+            g = _[1]
+            dp[i] = max(dp[i], dp[s - 1] + g)
+        dp[i] = dp[i - 1] if dp[i] < dp[i - 1] else dp[i]
+    return dp[n - 1]
+
