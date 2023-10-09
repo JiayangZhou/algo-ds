@@ -1,3 +1,4 @@
+from typing import List
 # https://leetcode.com/problems/valid-palindrome-ii/
 # two pointers
 def validPalindrome(self, s: str) -> bool:
@@ -34,4 +35,22 @@ def lemonadeChange(bills: list[int]) -> bool:
             else:
                 return False
     return True
-lemonadeChange(bills=[5,5,10,10,20])
+# lemonadeChange(bills=[5,5,10,10,20])
+
+# https://leetcode.com/problems/mice-and-cheese/
+from heapq import heapify, heappush, heappop
+def miceAndCheese(reward1: List[int], reward2: List[int], k: int) -> int:
+    n = len(reward1)
+    diff = []
+    for i in range(n):
+        diff.append((reward1[i] - reward2[i], i))
+    heapify(diff)
+    res = 0
+    while n - k > 0:
+        cur = heappop(diff)
+        res += reward2[cur[1]]
+        k += 1
+    while diff:
+        cur = heappop(diff)
+        res += reward1[cur[1]]
+    return res
