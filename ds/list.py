@@ -53,6 +53,11 @@ a = [1, 2, 2, 1]
 a.remove(2) # remove the first occurred specified element in list
 print(a)
 
+# addition
+a = [1, 2, 2, 1]
+a.insert(2, 0)
+print(a) # [1, 2, 0, 2, 1]
+
 # add same value to all element in a list 
 a = [90,80,78,98,100]
 b = [_ + 2 for _ in a if _ + 2 >= 0 ]
