@@ -61,19 +61,20 @@ print(sorted(a))
 a = [(1,3,1), (3,2,3), (2,1,2)]
 a.sort(key=lambda x: x[0])
 # a.sort(key=lambda x: x[0], reverse=True)
-print(a)
-print(sorted(a, key=lambda x: x[1]))
+# print(a)
+print(sorted(a, key=lambda x: -x[0]))
 # print(sorted(a, key=lambda x: x[1], reverse=True))
 
 a = [(1,3,1), (1,2,3), (2,2,2)]
-print(sorted(a, key=lambda x: (x[1], x[0], x[2]))) # first criteria is x[1]
+print(sorted(a, key=lambda x: (x[1], x[0], x[2]), reverse=True)) # first criteria is x[1]
 # second criteria is x[0], third criteria is x[2] 
+print(sorted(a, key=lambda x: (x[1], -x[0], x[2]))) 
 
 from functools import cmp_to_key   
 def comparator(x, y):
 	return x[2] - y[2]
 a.sort(key=cmp_to_key(comparator)) # sort with customized comparator
-print(a)
+# print(a)
 
 # iteration 
 s = [1, 2, 3]
