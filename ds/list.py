@@ -10,7 +10,7 @@ a = [1, 2, 3, 4, 3, 3]
 count_3 = a.count(3)
 print(count_3)
 
-b = a.copy()  
+b = a.copy()  # b = a[:] both are shallow copy of a
 print(b)
 
 a = ['cat', 'dog', 'rabbit', 'horse']
@@ -43,6 +43,7 @@ print(a[::-1]) # return a reversed list
 a = [1, 2, 3, 4]
 b = a[:2] # [1, 2]
 b = a[-2:] # [3, 4]
+b = a[2:2] # []
 
 a = [1, 2, 3] + [4]
 print(a)
@@ -88,3 +89,23 @@ for i, c in enumerate(s):
    
 for i in range(1, 6, 2):
     print(i)
+    
+
+# remove duplicates from a list
+k = [[1, 2], [4], [5, 6, 2], [1, 2], [3], [4]]
+# first way
+new = list()
+for sublist in k:
+    if sublist not in new:
+        new.append(sublist)
+print(new)
+# second way
+import itertools
+k.sort()
+print(list(k for k, _ in itertools.groupby(k)))
+
+# sublist, subsequence, subset
+array = [1, 2, 3, 4]
+# sublist is continuous and maintains relative order of elements e.g. [1, 2, 3]
+# subsequence is not continuous but maintains relative order e.g. [1, 2, 4]
+# subset is not continuous and does not maintain relative order e.g. [1, 3, 2]

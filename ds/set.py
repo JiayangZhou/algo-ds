@@ -49,3 +49,7 @@ print(set3)
 
 set3 = set2 ^ set1 # set3 = set1.symmetric_difference(set2)
 print(set3)
+
+# addition
+set1 = set()
+set1.add((1,2)) # tuple is okay, but list is not hashable
