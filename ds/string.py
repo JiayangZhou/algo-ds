@@ -1,7 +1,7 @@
 # basic operations
 
 s1 = "a"
-_ = ord(s1) # 97
+_ = ord(s1) # a 97 A 65
 print(_)
 print(chr(_))
 

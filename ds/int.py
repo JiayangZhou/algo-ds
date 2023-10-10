@@ -15,7 +15,7 @@ print(-float('inf') < 0)
 n = 9
 print(int(math.sqrt(n)))
 
-print(math.floor(3/2))
+print(math.floor(3/2)) # print(10//2) # floor division
 print(math.ceil(3/2))
 
 print(5 >> 1)
