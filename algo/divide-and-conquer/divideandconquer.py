@@ -5,7 +5,7 @@ class TreeNode:
         self.left = left
         self.right = right
 # https://leetcode.com/problems/maximum-binary-tree/
-def constructMaximumBinaryTree(self, nums: List[int]) -> Optional[TreeNode]:
+def constructMaximumBinaryTree(nums: List[int]) -> Optional[TreeNode]:
         def build(arr):
             arrmax = max(arr)
             index = arr.index(arrmax)

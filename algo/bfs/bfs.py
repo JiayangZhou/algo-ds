@@ -6,7 +6,7 @@ class TreeNode:
         self.right = right
         
 # https://leetcode.com/problems/path-sum-ii/
-def pathSum(self, root: Optional[TreeNode], targetSum: int) -> List[List[int]]:
+def pathSum(root: Optional[TreeNode], targetSum: int) -> List[List[int]]:
     res = []
     if not root:
         return res

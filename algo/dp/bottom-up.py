@@ -9,7 +9,7 @@ def integerBreak(self, n: int) -> int:
     return dp[n]
 
 # https://leetcode.com/problems/maximize-the-profit-as-the-salesman/
-def maximizeTheProfit(self, n: int, offers: List[List[int]]) -> int:
+def maximizeTheProfit(n: int, offers: List[List[int]]) -> int:
     dp = [0] * n
     p = [[] for _ in range(n)]
     for _ in offers:

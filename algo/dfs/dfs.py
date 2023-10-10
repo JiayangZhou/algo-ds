@@ -7,7 +7,7 @@ class TreeNode:
 # https://leetcode.com/problems/binary-tree-inorder-traversal/
 # inorder traversal, left subtree, root, right subtree
 class Solution:
-    def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+    def inorderTraversal(root: Optional[TreeNode]) -> List[int]:
         res = []
         def traversal(node):
             if not node:
@@ -22,7 +22,7 @@ class Solution:
 
 # https://leetcode.com/problems/binary-tree-preorder-traversal/
 # preorder traversal, root, left subtree, right subtree
-def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+def preorderTraversal(root: Optional[TreeNode]) -> List[int]:
     res = []
     def traversal(node):
         if not node:
@@ -37,7 +37,7 @@ def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
 
 # https://leetcode.com/problems/binary-tree-preorder-traversal/
 # postorder traversal, root, left subtree, right subtree
-def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+def postorderTraversal(root: Optional[TreeNode]) -> List[int]:
     res = []
     def traversal(node):
         if not node:
@@ -52,7 +52,7 @@ def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
 
 # https://leetcode.com/problems/binary-tree-level-order-traversal
 # level order traversal
-def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
+def levelOrder(root: Optional[TreeNode]) -> List[List[int]]:
     d = {_:[] for _ in range(2001)}
     def traversal(node, level):
         if not node:
