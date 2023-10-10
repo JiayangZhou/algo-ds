@@ -17,7 +17,7 @@ a = ['cat', 'dog', 'rabbit', 'horse']
 index = a.index('dog') # returns the first index of the specified element
 
 a = [1, 2, 3, 2]
-a = list(set(a))
+a = list(set(a)) # set does not preserve order
 print(a)
 
 # creation
@@ -100,7 +100,7 @@ for i in range(1, 6, 2):
     print(i)
     
 
-# remove duplicates from a list
+# remove duplicate lists from a list
 k = [[1, 2], [4], [5, 6, 2], [1, 2], [3], [4]]
 # first way
 new = list()
@@ -112,6 +112,12 @@ print(new)
 import itertools
 k.sort()
 print(list(k for k, _ in itertools.groupby(k)))
+
+# remove duplicates from a list
+a = [1, 10, 100, 1000, 1000]
+a = list(set(a))
+a = sorted(a)
+print(a)
 
 # sublist, subsequence, subset
 array = [1, 2, 3, 4]
