@@ -14,7 +14,7 @@ set1 = {1,2,3}
 set2 = {4,5,6}
 
 set_union = set1.union(set2)
-set_union = set2.union(set1) # return a new combined set
+set_union = set2.union(set1) # return a new combined set, or set3 = set1 | set2
 set1.update(set2) # add set2 to set1
 print(set_union)
 print(set1)
