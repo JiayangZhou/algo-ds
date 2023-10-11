@@ -11,3 +11,8 @@ print(s)
 
 # heap[0] is always the smallest element
 print(a[0])
+
+a.remove(3)
+heapify(a) # after remove or pop, you need to heapify list again to heap 
+print(a[0])
+

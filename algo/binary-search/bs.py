@@ -45,11 +45,11 @@ class Solution:
         right = len(self.arr) - 1
         while left < right:
             mid = (left + right) >> 1
-            if self.arr[mid] < r:
+            if self.arr[mid] < r: # what we look for is greater than mid, that is why we set the left to mid + 1
                 left = mid + 1
             else:
                 right = mid
-        return left
+        return left # return either left or right
 # obj = Solution([3,14,1,7])
 # param_1 = obj.pickIndex()
 # print(param_1)
