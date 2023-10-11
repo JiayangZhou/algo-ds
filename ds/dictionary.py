@@ -6,6 +6,7 @@ for k, v in d.items():
 x = d.get("d", 4) # returns the value of the item with the specified key.
 # If the  key does not exist, return the specified value 
 print(x)
+print(len(d))
 
 # creation 
 d = {}
@@ -34,4 +35,17 @@ d = {"a": 3, "b": 2, "c": 1}
 print(d.items())
 
 print(dict(sorted(d.items(), key=lambda x: x[1])))
+
+from collections import OrderedDict
+# OrderedDict maintains the order of insertion
+od = OrderedDict()
+od['a'] = 1
+od['b'] = 2
+od['c'] = 3 # Add a new item to the end of the dictionary
+# od.popitem() # pop last insertion
+od.popitem(0) # pop first insertion, 0 is the index
+for key, value in od.items():
+    print(key, value)
+
+
 
