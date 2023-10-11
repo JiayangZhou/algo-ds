@@ -8,3 +8,6 @@ s = heappop(a)
 print(s)
 
 # not thread safe
+
+# heap[0] is always the smallest element
+print(a[0])

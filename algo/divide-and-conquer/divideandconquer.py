@@ -6,13 +6,13 @@ class TreeNode:
         self.right = right
 # https://leetcode.com/problems/maximum-binary-tree/
 def constructMaximumBinaryTree(nums: List[int]) -> Optional[TreeNode]:
-        def build(arr):
-            arrmax = max(arr)
-            index = arr.index(arrmax)
-            node = TreeNode(arrmax)
-            if arr[:index]:
-                node.left = build(arr[:index])
-            if arr[index + 1:]:
-                node.right = build(arr[index + 1:])  
-            return node
-        return build(nums)
+    def build(arr):
+        arrmax = max(arr)
+        index = arr.index(arrmax)
+        node = TreeNode(arrmax)
+        if arr[:index]:
+            node.left = build(arr[:index])
+        if arr[index + 1:]:
+            node.right = build(arr[index + 1:])  
+        return node
+    return build(nums)

@@ -15,7 +15,7 @@ from collections import defaultdict
 d = defaultdict(list)
 d = defaultdict(lambda: 1)
 
-d = {_:set() for _ in range(0, 10)}
+d = {_:set() for _ in range(0, 10)} # cannot use dict(xxx)
 
 # addition
 a = d.setdefault("a", 1) # returns the value of the item with the specified key.

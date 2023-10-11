@@ -1,5 +1,6 @@
-# https://leetcode.com/problems/capacity-to-ship-packages-within-d-days
+from typing import List
 import sys
+# https://leetcode.com/problems/capacity-to-ship-packages-within-d-days
 def shipWithinDays(weights: list[int], days: int) -> int:
     # low = max(weights)
     # high = sum(weights)
