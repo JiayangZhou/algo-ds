@@ -17,7 +17,7 @@ print(int(math.sqrt(n)))
 
 print(math.floor(3/2)) # print(10//2) # floor division
 print(math.ceil(3/2))
-
+print(round(2.23, 1))
 print(5 >> 1)
 
 # conversion
