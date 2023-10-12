@@ -53,3 +53,6 @@ class Solution:
 # obj = Solution([3,14,1,7])
 # param_1 = obj.pickIndex()
 # print(param_1)
+
+# https://leetcode.com/problems/find-in-mountain-array
+# mountain array's top can be fetched with bs
