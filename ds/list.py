@@ -119,8 +119,8 @@ a = list(set(a))
 a = sorted(a)
 print(a)
 
-# sublist, subsequence, subset
+# sublist/substring, subsequence, subset
 array = [1, 2, 3, 4]
-# sublist is continuous and maintains relative order of elements e.g. [1, 2, 3]
+# sublist/substring is continuous and maintains relative order of elements e.g. [1, 2, 3]
 # subsequence is not continuous but maintains relative order e.g. [1, 2, 4]
 # subset is not continuous and does not maintain relative order e.g. [1, 3, 2]
