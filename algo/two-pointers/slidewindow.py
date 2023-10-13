@@ -36,3 +36,23 @@ def maxFreq(s: str, maxLetters: int, minSize: int, maxSize: int) -> int:
     if not d:
         return 0
     return sorted(d.items(), key=lambda x:x[1], reverse=True)[0][1]
+
+# https://leetcode.com/problems/longest-substring-without-repeating-characters/
+# dynamic sliding window
+def lengthOfLongestSubstring(self, s: str) -> int:
+    set1 = set()
+    last = 0
+    ans = 0
+    for i in range(len(s)):
+        cur = s[i]
+        if cur not in set1:
+            set1.add(cur)
+        else:
+            for j in range(last, i):
+                if s[j] == cur:
+                    last = j + 1
+                    break
+                else:
+                    set1.discard(s[j])
+        ans = max(ans, i - last + 1)
+    return ans
