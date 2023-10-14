@@ -82,4 +82,33 @@ def subsetsWithDup(nums: List[int]) -> List[List[int]]:
             dfs(i + 1, subset + [nums[i]])
     dfs(0, [])
     return sorted(res)
-subsetsWithDup([1,2,2])
+# subsetsWithDup([1,2,2])
+
+# https://leetcode.com/problems/longest-unequal-adjacent-groups-subsequence-ii
+# TLE ERROR subsequence problem
+def getWordsInLongestSubsequence(n: int, words: List[str], groups: List[int]) -> List[str]:
+    ans = []
+    d = {words[i]: i for i in range(n)}
+    def check(s1, s2):
+        diff = 0
+        for i in range(len(s1)):
+            if s1[i] != s2[i]:
+                diff += 1
+            if diff > 1:
+                return False
+        return True
+    def dfs(index, sub):
+        nonlocal ans
+        if len(sub) > len(ans):
+            ans = sub.copy()
+        if index >= n:
+            return
+        for i in range(index + 1, n):
+            if groups[d[words[index]]] != groups[i] and len(words[i]) == len(words[index]) and check(words[i], words[index]):
+                dfs(i, sub + [words[i]])
+    for i in range(n):
+        dfs(i, [words[i]])
+
+    return ans
+getWordsInLongestSubsequence(4, ["a","b","c","d"], [1,2,3,4])
+# getWordsInLongestSubsequence(6, ["cba","cc","cd","ccc","aba","ac"], [3,6,2,4,2,6])

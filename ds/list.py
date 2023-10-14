@@ -99,6 +99,12 @@ for i, c in enumerate(s):
 for i in range(1, 6, 2):
     print(i)
     
+# iteration of two lists with the same length
+
+arr1 = [1, 2, 3]
+arr2 = ["a", "b", "c"]
+for a1, a2 in zip(arr1, arr2):
+    print((a1, a2))
 
 # remove duplicate lists from a list
 k = [[1, 2], [4], [5, 6, 2], [1, 2], [3], [4]]
