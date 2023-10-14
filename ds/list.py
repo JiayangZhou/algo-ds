@@ -99,6 +99,10 @@ for i, c in enumerate(s):
 for i in range(1, 6, 2):
     print(i)
     
+a = [1, 2, 3]
+for i in range(2, -1, -1):
+    print(a[i])
+
 # iteration of two lists with the same length
 
 arr1 = [1, 2, 3]
