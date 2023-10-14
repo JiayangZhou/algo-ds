@@ -8,6 +8,8 @@ x = d.get("d", 4) # returns the value of the item with the specified key.
 print(x)
 print(len(d))
 
+print("a" in d) # same as "a" in d.keys()
+
 # creation 
 d = {}
 d = dict()
