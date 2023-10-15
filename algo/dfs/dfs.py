@@ -85,7 +85,8 @@ def subsetsWithDup(nums: List[int]) -> List[List[int]]:
 # subsetsWithDup([1,2,2])
 
 # https://leetcode.com/problems/longest-unequal-adjacent-groups-subsequence-ii
-# TLE ERROR subsequence problem
+# subsequence problem
+# not so optimized, TLE ERROR
 def getWordsInLongestSubsequence(n: int, words: List[str], groups: List[int]) -> List[str]:
     ans = []
     d = {words[i]: i for i in range(n)}

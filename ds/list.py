@@ -28,7 +28,8 @@ print(a)
 a = [0] * 40
 print(a)
 
-a = [[0,0]] * 5
+a = [[0,0]] * 5 # be careful doing this, all sub-lists will have the same reference
+a = [[0] * 2 for _ in range(5)] # do this to create a 2d list instead
 print(a)
 
 import sys
