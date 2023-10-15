@@ -41,3 +41,27 @@ def exist(board: List[List[str]], word: str) -> bool:
 # exist([["a","b"],["c","d"]], "cdba")
 # exist([["a","a"]], "aaa")
 
+# https://leetcode.com/problems/number-of-islands/
+def numIslands(grid: List[List[str]]) -> int:
+    n = len(grid) # row
+    m = len(grid[0]) # col
+    def dfs(row, col):
+        if grid[row][col] == "1":
+            grid[row][col] = "*"
+        else:
+            return
+        if row > 0:
+            dfs(row - 1, col)
+        if row < n - 1:
+            dfs(row + 1, col)
+        if col > 0:
+            dfs(row, col - 1)
+        if col < m - 1:
+            dfs(row, col + 1)
+    ans = 0
+    for i in range(n):
+        for j in range(m):
+            if grid[i][j] == "1":
+                dfs(i, j)
+                ans += 1
+    return ans
