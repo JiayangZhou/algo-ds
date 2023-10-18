@@ -53,3 +53,7 @@ print(set3)
 # addition
 set1 = set()
 set1.add((1,2)) # tuple is okay, but list is not hashable
+
+# could be useful to get the last element from set
+set1 = {1, 2, 3}
+print(set1.pop())
