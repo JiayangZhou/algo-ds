@@ -60,3 +60,19 @@ print(set(s)) # same as this set([*cur])
 s = "abc"
 for i, c in enumerate(s):
    print(i, c)
+
+s = "abcde"
+for i in range(len(s)):
+    print(i)
+    # you cannot manipulate i as for is just looping <class 'range'>
+    # print(type(range(len(s))))
+# do something like this instead if you want to manipulate i
+print(len(s[:0]))
+s = "bxo#j##tw"
+i = 0
+while i < len(s):
+    if s[i] == "#":
+        s = s[:max(i - 1, 0)] + s[i + 1:]
+        i = len(s[:max(i - 1, 0)]) - 1
+    i += 1
+print(s)
