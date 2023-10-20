@@ -71,7 +71,7 @@ print(b)
 a = [90,80,78,98,100]
 a.sort() # sort in place
 a = [90,80,78,98,100]
-print(sorted(a))
+print(sorted(a)) # sort's time complexity is O(nlogn), same as merge sort
 
 a = [(1,3,1), (3,2,3), (2,1,2)]
 a = [[1,3,1], [3,2,3], [2,1,2]]
