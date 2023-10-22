@@ -56,3 +56,35 @@ def lengthOfLongestSubstring(self, s: str) -> int:
                     set1.discard(s[j])
         ans = max(ans, i - last + 1)
     return ans
+
+# https://leetcode.com/problems/constrained-subsequence-sum
+def constrainedSubsetSum(nums, k):
+    n = len(nums)
+    deque = []
+    for i in range(n):
+        while(deque and deque[0] < i - k):
+            deque.pop(0)
+        if deque:
+            nums[i] = nums[deque[0]] + nums[i]
+
+        while(deque and nums[deque[-1]] < nums[i]): 
+            deque.pop()
+
+        if nums[i] > 0: 
+            deque.append(i)
+    return max(nums)
+    n = len(nums)
+    dp = [0] * (n + 1)
+    dp[0] = nums[0]
+    memo = [dp[0]]
+    ans = dp[0]
+    for i in range(1, n):
+        dp[i] = nums[i] + max(max(memo), 0)
+        if len(memo) == k:
+            memo.pop(0)
+            memo.append(dp[i])
+        else:
+            memo.append(dp[i])
+        ans = max(ans, dp[i])
+    return ans
+# constrainedSubsetSum([10,2,-3,-8,5,20], 3)
