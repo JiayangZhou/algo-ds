@@ -43,3 +43,14 @@ if n % 2 == 0:
     print(float((nums[n >> 1] + nums[(n >> 1) - 1]) / 2))
 else:
     print(float((nums[n >> 1])))
+
+a = 9
+a = math.sqrt(a) # a is 3.0 and is float
+a = 2
+a **= 3 # a is 8
+a = math.log(a, 2) # a is 3.0
+a = 8
+a = math.log2(a) # a is 3.0
+a = 8
+a = math.log(a) # if base is not specified, natural logarithm will be used (e)
+print(a)
