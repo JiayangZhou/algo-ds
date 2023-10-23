@@ -17,6 +17,7 @@ print(int(math.sqrt(n)))
 
 print(math.floor(3/2)) # print(10//2) # floor division
 print(math.ceil(3/2))
+print(int(3.2)) # 3
 print(round(2.23, 1))
 print(5 >> 1)
 
@@ -53,4 +54,7 @@ a = 8
 a = math.log2(a) # a is 3.0
 a = 8
 a = math.log(a) # if base is not specified, natural logarithm will be used (e)
-print(a)
+# change of base rule
+print(math.log2(8))
+print(math.log(8)/math.log(2))
+print(math.log2(8) == math.log(8)/math.log(2))
