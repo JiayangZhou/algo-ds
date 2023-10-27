@@ -399,3 +399,6 @@ FodyWeavers.xsd
 
 # LP stories
 lp/
+
+# whiteboards
+whiteboard/
