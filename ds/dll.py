@@ -32,3 +32,5 @@ class DLL:
         tail = self.tail.prev
         self.removeNode(tail)
         return tail
+    
+# LFU
