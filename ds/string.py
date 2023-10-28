@@ -11,6 +11,9 @@ print(s2[1:3]) #bc
 print(s2[:3]) #abc
 print(s2[3:]) #def
 
+s = "0123456789123"
+print(s[0:10])
+
 s3 = "abc"
 s3.startswith("a")
 s3.isdigit()
@@ -75,4 +78,9 @@ while i < len(s):
         s = s[:max(i - 1, 0)] + s[i + 1:]
         i = len(s[:max(i - 1, 0)]) - 1
     i += 1
+print(s)
+
+# sorting
+s = ["a", "ab", "abc"]
+s.sort(key=len, reverse=True)
 print(s)
