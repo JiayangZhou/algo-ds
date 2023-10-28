@@ -11,6 +11,7 @@ def findCircleNum(isConnected: List[List[int]]) -> int:
     def union(x, y):
         xRoot = find(x)
         yRoot = find(y)
+        # merge root
         if xRoot > yRoot:
             UF[xRoot] = yRoot
         else:
