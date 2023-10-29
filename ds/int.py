@@ -58,3 +58,6 @@ a = math.log(a) # if base is not specified, natural logarithm will be used (e)
 print(math.log2(8))
 print(math.log(8)/math.log(2))
 print(math.log2(8) == math.log(8)/math.log(2))
+
+print(math.pow(2, 3)) # 8.0
+print(2 ** 3) # 8
