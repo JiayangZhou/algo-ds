@@ -400,5 +400,8 @@ FodyWeavers.xsd
 # LP stories
 lp/
 
+# system-design
+system-design/
+
 # whiteboards
 whiteboard/
