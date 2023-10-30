@@ -10,6 +10,7 @@ print(s2[1:10]) #bcdef
 print(s2[1:3]) #bc
 print(s2[:3]) #abc
 print(s2[3:]) #def
+print(s2[3:3] == "")
 
 s = "0123456789123"
 print(s[0:10])
