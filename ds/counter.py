@@ -14,6 +14,16 @@ print(c)
 c["d"] = 2
 print(c) 
 
+c["d"] += 1
+print(c)
+
+a = [1, 2, 3, 3]
+c = Counter(a)
+
+c.pop(4, 0)
+print(c.most_common())
+
+
 # example
 # https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring
 def maxFreq(s: str, maxLetters: int, minSize: int, maxSize: int) -> int:

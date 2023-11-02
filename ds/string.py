@@ -15,11 +15,13 @@ print(s2[3:3] == "")
 s = "0123456789123"
 print(s[0:10])
 
-s3 = "abc"
+s3 = "Abc"
 s3.startswith("a")
 s3.isdigit()
 s3.isalpha()
 s3.isupper()
+s3 = s3.replace("a", " ").replace("b", " ").lower()
+print(s3)
 
 a = "A"
 print(a.lower())
