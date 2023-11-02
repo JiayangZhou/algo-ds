@@ -21,6 +21,10 @@ s3.isdigit()
 s3.isalpha()
 s3.isupper()
 
+a = "A"
+print(a.lower())
+print(a.upper())
+
 s4 = "a"
 ba = s4.upper()
 ba = chr(ord(s4) - 32)
