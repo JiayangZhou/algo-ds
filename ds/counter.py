@@ -23,6 +23,7 @@ c = Counter(a)
 c.pop(4, 0)
 print(c.most_common())
 
+print(c.items())
 
 # example
 # https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring
