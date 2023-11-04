@@ -13,6 +13,8 @@ print("a" in d) # same as "a" in d.keys()
 # creation 
 d = {}
 d = dict()
+d = dict([("1", 1)])
+d = dict({"1": 1})
 
 from collections import defaultdict
 d = defaultdict(list)

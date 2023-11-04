@@ -142,6 +142,9 @@ for _ in itertools.combinations(array, 2):
     # print(_)
     pass
 
+from itertools import combinations
+res = [list(_) for _ in combinations(array, 2)]
+
 # permutations
 for _ in itertools.permutations(array, 2):
     # print(_)
