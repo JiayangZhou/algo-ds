@@ -20,6 +20,10 @@ print(math.ceil(3/2))
 print(int(3.2)) # 3
 print(round(2.23, 1))
 print(5 >> 1)
+#find the the greatest common divisor of the two integers
+print (math.gcd(3, 6))
+print (math.gcd(12, 6))
+print (math.gcd(12, 36))
 
 # conversion
 a = 10
