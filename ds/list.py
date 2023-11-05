@@ -52,6 +52,8 @@ b = a[2:2] # []
 a = [1, 2, 3] + [4]
 print(a)
 
+memo = [set() for _ in range(n)]
+
 # deletion
 a = [1, 2, 2, 1]
 a.remove(2) # remove the first occurred specified element in list
