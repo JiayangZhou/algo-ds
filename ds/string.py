@@ -91,3 +91,8 @@ print(s)
 s = ["a", "ab", "abc"]
 s.sort(key=len, reverse=True)
 print(s)
+
+a = "cba"
+b = "cab"
+print(sorted(a))
+print(sorted(a) == sorted(b))
