@@ -17,8 +17,9 @@ print(s[0:10])
 
 s3 = "Abc"
 s3.startswith("a")
-s3.isdigit()
-s3.isalpha()
+s3.isdigit() # 1 2 3 
+s3.isalpha() # "a" "b" "c"
+s3.isalnum() # 1 2 3 "a" "b" "c"
 s3.isupper()
 s3 = s3.replace("a", " ").replace("b", " ").lower()
 print(s3)
