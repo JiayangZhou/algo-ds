@@ -1,10 +1,10 @@
 from heapq import heappush, heappop, heapify
 
 a = [5, 7, 9, 1, 3]
-heapify(a)
+heapify(a) # time complexity is O(n)
 
 heappush(a, 4)
-s = heappop(a)
+s = heappop(a) # time complexity is O(log n)
 print(s)
 
 # not thread safe

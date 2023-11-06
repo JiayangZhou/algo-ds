@@ -96,3 +96,10 @@ a = "cba"
 b = "cab"
 print(sorted(a))
 print(sorted(a) == sorted(b))
+
+a = "abc"
+a += "z" # a = a + "z"
+print(a)
+
+a = ""
+print(a[:-1] == "")
