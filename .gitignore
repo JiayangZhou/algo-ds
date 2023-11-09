@@ -396,12 +396,3 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
-
-# LP stories
-lp/
-
-# system-design
-system-design/
-
-# whiteboards
-whiteboard/
