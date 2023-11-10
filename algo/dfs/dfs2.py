@@ -18,3 +18,8 @@ def generateParenthesis(self, n: int) -> List[str]:
         
     dfs(left, right, "")
     return ans 
+
+# The space complexity of a recursive call 
+# depends on the maximum depth of the recursive call.
+# Each level consumes a constant amount of space.
+# The above example space complexity is O(n)    
