@@ -16,6 +16,11 @@ n = 9
 print(int(math.sqrt(n)))
 
 print(math.floor(3/2)) # print(10//2) # floor division
+print(math.floor(-3/2)) # -2
+# if you want to round towards 0 for negative and positive number
+print(int(-3/2)) # -1
+print(int(3/2)) # 1
+
 print(math.ceil(3/2))
 print(int(3.2)) # 3
 print(round(2.23, 1))

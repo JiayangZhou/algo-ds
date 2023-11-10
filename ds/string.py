@@ -18,11 +18,17 @@ print(s[0:10])
 s3 = "Abc"
 s3.startswith("a")
 s3.isdigit() # 1 2 3 
+print("-1".lstrip("-").isdigit()) # remove "-" from front of the string
 s3.isalpha() # "a" "b" "c"
 s3.isalnum() # 1 2 3 "a" "b" "c"
 s3.isupper()
 s3 = s3.replace("a", " ").replace("b", " ").lower()
 print(s3)
+
+my_str = "   text "
+my_str = my_str.strip()
+my_str = "---text-"
+my_str = my_str.strip("-") # remove "-" from front of the string and back of the string
 
 a = "A"
 print(a.lower())
