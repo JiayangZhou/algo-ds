@@ -4,6 +4,9 @@ import math
 a = sys.maxsize
 print(-a)
 
+print(max(1, 2, 3))
+print(min(1, 2, 3))
+
 a = 1
 b = 3
 c = abs(a - b) 
