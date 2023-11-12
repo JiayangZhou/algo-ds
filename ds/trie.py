@@ -49,3 +49,38 @@ def longestValidSubstring(self, word: str, forbidden: List[str]) -> int:
                 start = j + 1
         ans = max(ans, i + 1 - start)
     return ans
+
+# another solution
+class TrieNode:
+    def __init__(self):
+        self.child = {}
+        self.isEnd = False
+class Trie:
+
+    def __init__(self):
+        self.head = TrieNode()
+
+    def insert(self, word: str) -> None:
+        temp = self.head
+        for c in word:
+            if not c in temp.child:
+                temp.child[c] = TrieNode()
+            temp = temp.child[c]
+        temp.isEnd = True
+        
+        
+    def search(self, word: str) -> bool:
+        temp = self.head
+        for c in word:
+            if not c in temp.child:
+                return False
+            temp = temp.child[c]
+        return temp.isEnd
+
+    def startsWith(self, prefix: str) -> bool:
+        temp = self.head
+        for c in prefix:
+            if not c in temp.child:
+                return False
+            temp = temp.child[c]
+        return True
