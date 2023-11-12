@@ -35,3 +35,26 @@ def wordBreak(s: str, wd: List[str]) -> List[str]:
     return list(set(res))
 wordBreak(s="pineapplepenapple", wd=["apple","pen","applepen","pine","pineapple"])
 
+# https://leetcode.com/problems/word-search/description/
+def exist(self, board: List[List[str]], word: str) -> bool:
+    n = len(board) # row
+    m = len(board[0]) # col
+    def bt(i, j, word):
+        if not word:
+            return True
+        if i < 0 or i == n or j < 0 or j == m:
+            return False
+        if word[0] != board[i][j]:
+            return False
+        board[i][j] = "*"
+        for row_offset, col_offset in [(0, 1), (1, 0), (0, -1), (-1, 0)]:
+            if bt(i + row_offset, j + col_offset, word[1:]):
+                return True
+        board[i][j] = word[0]
+        return False
+
+    for i in range(n):
+        for j in range(m):
+            if bt(i, j, word):
+                return True
+    return False
