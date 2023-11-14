@@ -54,7 +54,7 @@ s.count("1")
 
 # modification
 s = "abc"
-s_reversed = s[::-1] # cba
+s_reversed = s[::-1] # cba, and time complexity is O(n)
 
 
 # conversion
