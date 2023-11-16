@@ -151,3 +151,6 @@ res = [list(_) for _ in combinations(array, 2)]
 for _ in itertools.permutations(array, 2):
     # print(_)
     pass
+
+a = [1, 2, 3]
+print(a[:0])
