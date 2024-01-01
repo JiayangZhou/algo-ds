@@ -5,6 +5,11 @@ _ = ord(s1) # a 97 A 65
 print(_)
 print(chr(_))
 
+s1 = "abc"
+s2 = "acb"
+# compare two string lexicographically
+print(s1 > s2)
+
 s2 = "abcdef"
 print(s2[1:10]) #bcdef
 print(s2[1:3]) #bc

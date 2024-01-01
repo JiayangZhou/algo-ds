@@ -1,13 +1,13 @@
 from collections import Counter
 
 s = "abc"
-c = Counter(s)
+c = Counter(s) # possible also to create a counter c = Counter() first and update it
 
 print(c) # Counter({'a': 1, 'b': 1, 'c': 1})
 print(c["a"])
 
-c.update("a")
-print(c)
+c.update("abc") 
+print(c) # Counter({'a': 2, 'b': 2, 'c': 2})
 c.update({'a':1, 'd':5})
 print(c)
 
