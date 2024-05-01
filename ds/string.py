@@ -10,6 +10,8 @@ s2 = "acb"
 # compare two string lexicographically
 print(s1 > s2)
 
+print("s2[0]: " + s2[0])
+
 s2 = "abcdef"
 print(s2[1:10]) #bcdef
 print(s2[1:3]) #bc
@@ -115,3 +117,7 @@ print(a)
 
 a = ""
 print(a[:-1] == "")
+
+# find index of first 'bc' in string "abc"
+index = "abc".index('bc')
+print(index)

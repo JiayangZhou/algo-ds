@@ -96,6 +96,7 @@ a.sort(key=cmp_to_key(comparator)) # sort with customized comparator
 
 # iteration 
 s = [1, 2, 3]
+s.append(4) # you cannot assign value out of index s[3] = 4
 for i, c in enumerate(s):
    print(i, c)
    
