@@ -6,6 +6,11 @@ max_a = max(a)
 min_a = min(a)
 print(total, n)
 
+print(a[:5]) # you can get a chunk of arr even index set is outside of range
+
+arr = []
+arr.sort(reverse=True) # even empty array can be sorted
+
 a = [1, 2, 3, 4, 3, 3]
 count_3 = a.count(3)
 print(count_3)
