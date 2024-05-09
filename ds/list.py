@@ -9,6 +9,7 @@ print(total, n)
 print(a[:5]) # you can get a chunk of arr even index set is outside of range
 
 arr = []
+# sort's time complexity O(nlogn) space complexity O(n)
 arr.sort(reverse=True) # even empty array can be sorted
 
 a = [1, 2, 3, 4, 3, 3]
