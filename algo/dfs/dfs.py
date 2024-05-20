@@ -113,3 +113,15 @@ def getWordsInLongestSubsequence(n: int, words: List[str], groups: List[int]) ->
     return ans
 getWordsInLongestSubsequence(4, ["a","b","c","d"], [1,2,3,4])
 # getWordsInLongestSubsequence(6, ["cba","cc","cd","ccc","aba","ac"], [3,6,2,4,2,6])
+
+# get all subsets' xor sum
+# https://leetcode.com/problems/sum-of-all-subset-xor-totals/?envType=daily-question&envId=2024-05-20
+def subsetXORSum(self, nums: List[int]) -> int:
+    res = 0
+    def dfs(index, subset, xor):
+        nonlocal res
+        res += xor
+        for i in range(index, len(nums)):
+            dfs(i + 1, subset + [nums[i]], xor ^ nums[i])
+    dfs(0, [], 0)
+    return res
