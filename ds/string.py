@@ -121,3 +121,8 @@ print(a[:-1] == "")
 # find index of first 'bc' in string "abc"
 index = "abc".index('bc')
 print(index)
+
+a = "abc"
+print(a[:0]) # ""
+print(a[:-1]) # ab
+print(a[0:]) # abc
