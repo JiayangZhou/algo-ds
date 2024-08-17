@@ -15,6 +15,7 @@ set2 = {4,5,6}
 
 set_union = set1.union(set2)
 set_union = set2.union(set1) # return a new combined set, or set3 = set1 | set2
+set3 = set1 | set2 # combine
 set1.update(set2) # add set2 to set1
 print(set_union)
 print(set1)
@@ -32,7 +33,7 @@ set1 = {1,2,3,4}
 set2 = {4,5,6}
 
 set3 = set1 - set2 # set3 = set1.difference(set2), order matters
-print(set3) 
+print(set3)
 
 # symmetric_difference
 set1 = {1, 2, 3, 4, 5, 6}

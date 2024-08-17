@@ -159,5 +159,9 @@ for _ in itertools.permutations(array, 2):
     # print(_)
     pass
 
-a = [1, 2, 3]
+a = [1, 2, 3, 4, 5]
 print(a[:0])
+print(a[~3])
+
+a.extend(a)
+print(a)

@@ -126,3 +126,5 @@ a = "abc"
 print(a[:0]) # ""
 print(a[:-1]) # ab
 print(a[0:]) # abc
+
+print(len("\\")) # the result is 1

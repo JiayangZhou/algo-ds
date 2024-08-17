@@ -1,7 +1,7 @@
 import sys
 import math
 
-a = sys.maxsize
+a = sys.maxsize # float("inf")
 print(-a)
 
 print(max(1, 2, 3))
