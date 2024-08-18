@@ -5,6 +5,9 @@ set1.add(32)
 set1.discard("Java") # preferred over set1.remove("Java"), no exception raised
 print(set1)
 
+ugly_set = {1, 2, 3}
+smallest_ugly = min(ugly_set) # min, max can be used on set but time complexity is O(n)
+
 # clean
 set1.clear() 
 set1 = set()
