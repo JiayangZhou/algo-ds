@@ -36,7 +36,7 @@ print (math.gcd(12, 36))
 # conversion
 a = 10
 a_bin = bin(a)
-print(a_bin)
+print(a_bin) # 0b1010
 print(int(a_bin, 2)) 
 
 # random

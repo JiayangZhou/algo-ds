@@ -66,7 +66,7 @@ s_reversed = s[::-1] # cba, and time complexity is O(n)
 
 # conversion
 s = "abc"
-a = list(s) 
+a = list(s) # split string to char list ['a', 'b', 'c'] 
 a = [*s] # split string to char list ['a', 'b', 'c'] 
 
 l = ["a","b","cd"]
@@ -76,6 +76,8 @@ print(s)
 s = "a b c d e"
 l = s.split(" ")
 print(l)
+print("a b c".split()) # ['a', 'b', 'c'],  default is white space
+print("abc".split()) # ['abc'],  default is white space
 
 s="abcd"
 print(set(s)) # same as this set([*cur])
