@@ -165,3 +165,8 @@ print(a[~3])
 
 a.extend(a)
 print(a)
+
+a = [1, 2]
+b = a 
+b[0] = 2
+print(a)
