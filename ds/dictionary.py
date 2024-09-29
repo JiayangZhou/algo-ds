@@ -30,7 +30,7 @@ print(a)
 # deletion
 d = {"a": 1, "b": 2, "c": 3}
 print(d.pop("a")) # will raise error too if "a" not in d
-print(d.pop("a", 1))
+print(d.pop("z", 404)) # will not raise error
 
 del d["c"] # in place deletion, raise exception if not exist
 

@@ -10,14 +10,9 @@ s2 = "acb"
 # compare two string lexicographically
 print(s1 > s2)
 
-print("s2[0]: " + s2[0])
+print(len("\\")) # the result is 1
 
-s2 = "abcdef"
-print(s2[1:10]) #bcdef
-print(s2[1:3]) #bc
-print(s2[:3]) #abc
-print(s2[3:]) #def
-print(s2[3:3] == "")
+print("s2[0]: " + s2[0])
 
 s = "0123456789123"
 print(s[0:10])
@@ -110,7 +105,7 @@ print(s)
 
 a = "cba"
 b = "cab"
-print(sorted(a))
+print(type(sorted(a))) # <class 'list'>
 print(sorted(a) == sorted(b))
 
 a = "abc"
@@ -124,12 +119,19 @@ print(a[:-1] == "")
 index = "abc".index('bc')
 print(index)
 
+s2 = "abcdef"
+print(s2[1:10]) #bcdef
+print(s2[1:3]) #bc
+print(s2[:3]) #abc
+print(s2[3:]) #def
+print(s2[3:3] == "")
+
 a = "abc"
 print(a[:0]) # ""
 print(a[:-1]) # ab
 print(a[0:]) # abc
 print(a[:3]) # abc
-print(a[3:]) # ""
-
-
-print(len("\\")) # the result is 1
+print(a[3:]) # "" but a[-3:] will raise error
+print(a[5:]) # "" this works
+print(a[:5]) # "abc"
+print(a[:]) # "abc" the origin string
