@@ -169,7 +169,11 @@ print(a[~3])
 a.extend(a)
 print(a)
 
-a = [1, 2]
+a = [1, 2, 3]
 b = a 
 b[0] = 2
 print(a)
+print(''.join(map(str, a))) # 223
+print([str(i) for i in a]) # ['2', '2', '3']
+print(''.join([str(i) for i in a])) # 223
+
