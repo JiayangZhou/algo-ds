@@ -13,6 +13,7 @@ c = abs(a - b)
 print(c)
 
 print(-float('inf') < 0)
+print(-float('-inf') < 0)
 
 # calculation
 n = 9
@@ -24,7 +25,7 @@ print(math.floor(-3/2)) # -2
 print(int(-3/2)) # -1
 print(int(3/2)) # 1
 
-print(math.ceil(3/2))
+print(math.ceil(3/2)) # -(a//-b)
 print(int(3.2)) # 3
 print(round(2.23, 1))
 print(5 >> 1)

@@ -36,9 +36,9 @@ del d["c"] # in place deletion, raise exception if not exist
 
 # sort
 d = {"a": 3, "b": 2, "c": 1}
-print(d.items())
-
-print(dict(sorted(d.items(), key=lambda x: x[1])))
+print(d.items()) # dict_items([('a', 3), ('b', 2), ('c', 1)])
+print(dict(sorted(d.items(), key=lambda x: x[1]))) # {'c': 1, 'b': 2, 'a': 3}
+print(sorted(d.items(), key=lambda x: x[1])) # [('c', 1), ('b', 2), ('a', 3)]
 
 from collections import OrderedDict
 # OrderedDict maintains the order of insertion
