@@ -74,3 +74,8 @@ print(math.log2(8) == math.log(8)/math.log(2))
 
 print(math.pow(2, 3)) # 8.0
 print(2 ** 3) # 8
+
+a = 0
+target = {1, 2, 3}
+a += 4 in target # only add 4 if 4 in target
+print(a)
