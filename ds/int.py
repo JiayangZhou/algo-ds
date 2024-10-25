@@ -77,5 +77,5 @@ print(2 ** 3) # 8
 
 a = 0
 target = {1, 2, 3}
-a += 4 in target # only add 4 if 4 in target
+a += 3 in target # only add 1 if that number is in target
 print(a)
