@@ -79,3 +79,9 @@ a = 0
 target = {1, 2, 3}
 a += 3 in target # only add 1 if that number is in target
 print(a)
+
+print(float(math.sqrt(9)) == int(3)) # you can compare float and int
+print(type(float(math.sqrt(9))))
+a = 4 / 2
+print(a == 2)
+print(type(a))
