@@ -177,3 +177,8 @@ print(''.join(map(str, a))) # 223
 print([str(i) for i in a]) # ['2', '2', '3']
 print(''.join([str(i) for i in a])) # 223
 
+print(list(range(2)))
+
+factory = [[2,2],[6,2]]
+factory = [pos for pos, limit in sorted(factory) for _ in range(limit)]
+print(factory) # [2, 2, 6, 6]

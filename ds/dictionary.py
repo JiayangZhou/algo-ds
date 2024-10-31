@@ -51,5 +51,6 @@ od.popitem(0) # pop first insertion, 0 is the index
 for key, value in od.items():
     print(key, value)
 
-
+print(od.keys()) # odict_keys(['b', 'c'])
+print(od.values()) # odict_values([2, 3])
 
