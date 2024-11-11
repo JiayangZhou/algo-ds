@@ -17,13 +17,14 @@ print(-float('-inf') < 0)
 
 # calculation
 n = 9
-print(int(math.sqrt(n)))
+print(int(math.sqrt(n))) # same as n**0.5
 
-print(math.floor(3/2)) # print(10//2) # floor division
+print(math.floor(3/2)) # print(10//2) # floor division, rounding down 3.7 -> 3
+# -3.7 -> -4
 print(math.floor(-3/2)) # -2
 # if you want to round towards 0 for negative and positive number
-print(int(-3/2)) # -1
-print(int(3/2)) # 1
+print(int(-3/2)) # -1 (removes the decimal portion without rounding)
+print(int(3/2)) # 1, e.g. 3.7 -> 3 -3.7 -> -3
 
 print(math.ceil(3/2)) # -(a//-b)
 print(int(3.2)) # 3
