@@ -76,6 +76,11 @@ print(math.log2(8) == math.log(8)/math.log(2))
 print(math.pow(2, 3)) # 8.0
 print(2 ** 3) # 8
 
+y = 8  # Result
+n = 3  # Exponent
+x = y ** (1 / n) # Calculate the base
+print(x)  # Output: 2.0
+
 a = 0
 target = {1, 2, 3}
 a += 3 in target # only add 1 if that number is in target
